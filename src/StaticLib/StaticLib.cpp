@@ -13,13 +13,11 @@ bool is_same(int val1, int val2)
 int calc_combinations_3(int sum, int val1, int val2, int val3)
 {
 	// やること：val1～val3の和がsumになる数字の組み合わせの数を計算します
-	int cnt = 0;
-	int val[] = { val1,val2,val3 };
 
-	int comb[7] = { val1, val2, val3, val1 + val2, val1 + val3, val2 + val3, val1 + val2 + val3 };
-	int flag = 0;
+	int vals[7] = { val1, val2, val3, val1 + val2, val1 + val3, val2 + val3, val1 + val2 + val3 };
+	int cnt = 0;
 	for (int i = 0; i < 7; i++) {
-		if (sum == comb[i]) { flag++; }
+		if (sum == vals[i]) { cnt++; }
 	}
-	return flag;
+	return cnt;
 }
