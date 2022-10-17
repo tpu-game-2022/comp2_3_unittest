@@ -4,7 +4,7 @@
 
 ライブラリとユニットテストとテストアプリケーションのプログラムを作成しました。
 ただし、中身が実装されていません。
-実装して、ユニットテストが通るようにしてください。
+実装してユニットテストが通るようにしてください。
 
 [![MS Build and Test](https://github.com/SWD9/comp2_3_unittest/actions/workflows/ms_test.yml/badge.svg)](https://github.com/SWD9/comp2_3_unittest/actions/workflows/ms_test.yml)
 
