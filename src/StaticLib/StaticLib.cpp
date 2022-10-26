@@ -6,6 +6,11 @@
 bool is_same(int val1, int val2)
 {
 	// やること：この処理を数字を比較するように変更します
+	if (val1 == val2)
+	{
+		return true;
+	    	
+	}
 	return false;
 }
 
@@ -13,5 +18,27 @@ bool is_same(int val1, int val2)
 int calc_combinations_3(int sum, int val1, int val2, int val3)
 {
 	// やること：val1～val3の和がsumになる数字の組み合わせの数を計算します
-	return 0;
+	int count = 0;
+	if (sum == val1){
+		count++;
+	}
+	if (sum == val2){
+		count++;
+	}
+	if (sum == val3){
+		count++;
+	}
+	if (sum == val1+val2){
+		count++;
+	}
+	if (sum == val1+val3){
+		count++;
+	}
+	if (sum == val2+val3){
+		count++;
+	}
+	if (sum == val1+val2+val3){
+		count++;
+	}
+	return count;
 }
